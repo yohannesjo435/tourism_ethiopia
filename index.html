@@ -14,19 +14,28 @@
     <title>Ethiopian Tourism</title>
   </head>
   <body>
-    <Header>
-      <div class="logo"><a href="">Ethiopian Tourism</a></div>
-      
-      <nav>
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">Gallery</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Contact us</a></li>
-        </ul>
-      </nav>
+    <div class="header-wrapper">
+      <Header>
+        <div class="logo"><a href="">Ethiopian Tourism</a></div>
+        
+        <nav class="nav">
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Gallery</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact us</a></li>
+          </ul>
+        </nav>
 
-    </Header>
+        <div class="hum-menu" onclick="toggleMenu()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+  
+      </Header>
+    </div>
+    
     <div class="hero-slide">
       <div class="slide fade">
         <img src="./assets/lalibela.jpg" />
@@ -59,6 +68,7 @@
       <a class="next" onclick="plusSlide(1)"><i class="fa-solid fa-chevron-right"></i></a>
       
     </div>
+
     <script src="main.js"></script>
   </body>
 </html>

@@ -1,5 +1,7 @@
 let slideIndex = 1;
 let slides = document.getElementsByClassName("slide");
+let nav = document.querySelector(".nav");
+let hum = document.querySelector(".hum-menu")
 showSlides(slideIndex)
 slideShow() 
 
@@ -29,4 +31,15 @@ function slideShow() {
         showSlides(slideIndex)
     }, 5000)
   }
+}
+
+function toggleMenu() {
+  if (nav.style.display === "none"){
+    nav.style.display = "flex"
+    hum.classList.add("open")
+  }else {
+    nav.style.display = "none"
+    hum.classList.remove("open")
+  }
+  
 }

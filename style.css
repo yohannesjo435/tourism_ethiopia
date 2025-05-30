@@ -45,6 +45,11 @@ header nav ul li a{
   color: var(--primary-white);
   font-size: 14px;
 }
+nav {
+  display: flex;
+  animation-name: fade;
+  animation-duration: 1s;
+}
 .hero-slide {
   width: 100%;
   height: 100vh;
@@ -99,6 +104,13 @@ header nav ul li a{
   border: 1px solid var(--primary-white);
   width: 150px;
   height: 40px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.5s ease-in-out;
+}
+.hero-slide .slide .content button:hover{
+  background-color: var(--primary-white);
+  color: var(--primary-black);
 }
 .prev, .next {
   cursor: pointer;
@@ -124,4 +136,56 @@ header nav ul li a{
 }
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
+}
+.hum-menu {
+  /* display: flex; */
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  animation-name: fade;
+  animation-duration: 1.5s;
+  /* outline: 1px solid var(--primary-white); */
+}
+.hum-menu div{
+  background-color: var(--primary-white);
+  width: 100%;
+  width: 25px;
+  height: 2px;
+}
+
+.open div:first-child {
+  transform: rotate(45deg) translate(8px, 5px);
+  transition: 0.5s ease-in-out;
+}
+.open div:last-child {
+  transform: rotate(-45deg) translate(7px, -5px);
+  transition: 0.5s ease-in-out;
+}
+.open div:nth-child(2) {
+  display: none;
+}
+@media (max-width: 900px) {
+  .hum-menu {
+    display: flex;
+
+  }
+  .header-wrapper {
+    position: relative;
+  }
+  nav{
+    display: none;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    padding: 5% 10%;
+  }
 }
