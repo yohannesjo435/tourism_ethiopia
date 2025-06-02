@@ -1,45 +1,14 @@
-let slideIndex = 1;
-let slides = document.getElementsByClassName("slide");
-let nav = document.querySelector(".nav");
-let hum = document.querySelector(".hum-menu")
-showSlides(slideIndex)
-slideShow() 
+const express = require("express")
+const app = express()
+const PORT = 8080
 
-function plusSlide(n) {
-  showSlides(slideIndex += n)
-}
+app.set("view engine", "ejs")
+app.use(express.static("public"))
 
-function showSlides(n){
-  if (n > slides.length) {
-    slideIndex = 1
-  }  
-  if (n < 1) {
-    slideIndex = slides.length
-  }
+app.get("/", (req, res)=> {
+  res.render("index")
+})
 
-  for (let i = 0; i < slides.length; i++){
-    slides[i].style.display = "none"
-  }
-  
-  slides[slideIndex -1].style.display = "block"
-}
-
-function slideShow() {
-  if(slideIndex < slides.length){
-    setInterval(()=> {
-        slideIndex++
-        showSlides(slideIndex)
-    }, 5000)
-  }
-}
-
-function toggleMenu() {
-  if (nav.style.display === "none"){
-    nav.style.display = "flex"
-    hum.classList.add("open")
-  }else {
-    nav.style.display = "none"
-    hum.classList.remove("open")
-  }
-  
-}
+app.listen(PORT, ()=> {
+  console.log(`The server is running on port ${PORT}`)
+})
