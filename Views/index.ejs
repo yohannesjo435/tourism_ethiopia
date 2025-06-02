@@ -18,24 +18,7 @@
   </head>
   <body>
     <div class="header-wrapper">
-      <header>
-        <div class="logo"><a href="">Ethiopian Tourism</a></div>
-
-        <nav class="nav">
-          <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">Gallery</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Contact us</a></li>
-          </ul>
-        </nav>
-
-        <div class="hum-menu" onclick="toggleMenu()">
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-      </header>
+      <%-include("header")  %>
     </div>
 
     <div class="hero-slide">
@@ -44,7 +27,7 @@
         <div class="content">
           <h1>Lalibela</h1>
           <p>The africa jersalem</p>
-          <button class="hero-btn">Learn-more</button>
+          <button class="hero-btn"><a href="/countryInfo/1">Learn-more</a></button>
         </div>
       </div>
 
@@ -53,7 +36,7 @@
         <div class="content">
           <h1>Axum</h1>
           <p>The africa jersalem</p>
-          <button class="hero-btn">Learn-more</button>
+          <button class="hero-btn"><a href="/countryInfo/2">Learn-more</a></button>
         </div>
       </div>
 
@@ -62,7 +45,7 @@
         <div class="content">
           <h1>GEDAM</h1>
           <p>The africa jersalem</p>
-          <button class="hero-btn">Learn-more</button>
+          <button class="hero-btn"><a href="/countryInfo/3">Learn-more</a></button>
         </div>
       </div>
 
@@ -124,31 +107,7 @@
       </div>
     </div>
 
-    <footer>
-      <div class="logo">
-        Ethiopian Tourism
-      </div>
-
-      <nav class="nav">
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">Gallery</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Contact us</a></li>
-        </ul>
-      </nav>
-
-      <div>
-        <p>Get in Touch with us</p>
-
-        <div class="social_links">
-          <i class="fa-brands fa-facebook"></i>
-          <i class="fa-brands fa-telegram"></i>
-          <i class="fa-brands fa-x-twitter"></i>
-          <i class="fa-brands fa-youtube"></i>
-        </div>
-      </div>
-    </footer>
+    <%-include("footer") %>
 
     <script src="script.js"></script>
   </body>
