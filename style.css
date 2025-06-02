@@ -232,12 +232,13 @@ header nav {
   }
 }
 .bento_grid_wrapper {
-  padding:  0 10% 20% 10%;
+  background-color: antiquewhite;
+  padding:  10% 5% 20% 5%;
   font-family: var(--primary-font);
 }
 .bento_grid_wrapper h1 {
   font-size: 50px;
-  margin-bottom: 40px;
+  margin-bottom: 70px;
   text-align: center;
 }
 .bento_grid {
@@ -246,7 +247,7 @@ header nav {
     "item1 item1 item2"
     "item3 item4 item5"
   ;
-  gap: 15px 15px;
+  gap: 20px 20px;
 }
 .bento_grid .item1 {
   grid-area: item1;
@@ -306,8 +307,11 @@ footer {
   color: var(--primary-white);
   height: 50vh;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   padding: 5% 10%;
+  outline: auto;
+}
+footer *{
 }
 
 footer .logo {
@@ -317,9 +321,36 @@ footer nav ul {
   display: flex;
   flex-direction: column;
   list-style: none;
-  gap: 30px;
+  gap: 20px;
 }
 footer nav ul li a{
   text-decoration: none;
   color: var(--primary-white);
+}
+footer div .social_links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;  
+}
+footer div .social_links i {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  footer {
+    padding: 5% 10%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 70vh;
+    font-size: 15px;
+  }
+  footer .logo {
+    font-size: 2rem;
+  }
+  footer nav ul li{
+    font-size: 13px;
+  }
+  
 }
