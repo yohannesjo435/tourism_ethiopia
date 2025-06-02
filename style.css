@@ -341,9 +341,9 @@ footer div .social_links i {
   footer {
     padding: 5% 10%;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    height: 70vh;
+    height: 60vh;
     font-size: 15px;
   }
   footer .logo {
