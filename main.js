@@ -3,7 +3,7 @@ const indexRoute = require("./routes/indexRoute")
 const galleryRoute = require("./routes/galleryRoute")
 const aboutusRouter = require("./routes/aboutusRoute")
 const app = express()
-const PORT = 8080
+const PORT = 8080 || 8080
 
 app.set("view engine", "ejs")
 app.use(express.static("public"))
