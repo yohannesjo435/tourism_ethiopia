@@ -19,5 +19,8 @@ Welcome to the **Ethiopian Tourism Website**! This project showcases the rich cu
 
 ## Installation
 
-1. lone the repository:
+1. clone the repository:
    git clone https://github.com/yohannesjo435/tourism_ethiopia
+
+2, Go to TOURSIM_ETHIOPIA folder 
+   cd TOURSIM_ETHIOPIA
