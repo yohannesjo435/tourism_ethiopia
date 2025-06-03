@@ -29,7 +29,7 @@ function slideShow() {
     setInterval(()=> {
         slideIndex++
         showSlides(slideIndex)
-    }, 5000)
+    }, 4000)
   }
 }
 
