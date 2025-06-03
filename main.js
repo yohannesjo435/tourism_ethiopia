@@ -5,6 +5,7 @@ const aboutusRouter = require("./routes/aboutusRoute")
 const app = express()
 const PORT = 8080 || 8080
 
+app.set("views", __dirname + "/views")
 app.set("view engine", "ejs")
 app.use(express.static("public"))
 
