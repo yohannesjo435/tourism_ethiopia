@@ -18,9 +18,10 @@ Welcome to the **Ethiopian Tourism Website**! This project showcases the rich cu
 - **CSS**: For styling and layout.
 
 ## Installation
-
-1. clone the repository:
+1, **Install Node.js**: 
+   Make sure you have Node.js installed on your machine. You can download it from [nodejs.org](https://nodejs.org/).
+2. clone the repository:
    git clone https://github.com/yohannesjo435/tourism_ethiopia
 
-2, Go to TOURSIM_ETHIOPIA folder 
-   cd TOURSIM_ETHIOPIA
+3, Go to TOURSIM_ETHIOPIA folder 
+   cd tourism_ethiopia
